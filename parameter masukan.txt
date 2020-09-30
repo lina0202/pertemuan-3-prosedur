@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+void hitungluas(int a, int t){
+	int l;
+	l = 0.5 * a * t;
+	cout<<"luas segitiga = "<<l<<endl;
+}
+
+int main(){
+	int i,n,a,t;
+	cout<<"Banyaknya segitiga = ";cin>>n;
+	for(i=1; i<=n; i++){
+		cout<<"segitiga yang ke- "<<i<<endl;
+		cout<<"panjang alas segitiga ";cin>>a;
+		cout<<"tinggi segitiga ";cin>>t;
+		hitungluas(a,t);
+	}
+	cin.get();
+	return 0;
+}

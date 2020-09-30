@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	int a,b,hasil;
+	cout<<"jumlah peserta ujian adalah = 2"<<endl;
+	cout<<"niai ujian yang ke-1 = ";cin>>a;
+	cout<<"nilai ujian yang ke-2 = ";cin>>b;
+	
+	hasil=(a+b)/2;
+	
+	cout<<"nilai rata-rata = "<<hasil<<endl;
+	
+	if(hasil > 50){
+		cout<<"nilai rata-rata ujian bagus";
+	}
+	if(hasil < 50){
+		cout<<"nilai rata-rata ujian tidak bagus";
+	}
+	cin.get();
+	return 0;
+}

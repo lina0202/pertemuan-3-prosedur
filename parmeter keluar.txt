@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+void hitungluas(int a, int t, int *l){
+	*l = 0.5 * a * t;
+}
+
+int main(){
+	int i,n,a,t,l;
+cout<<"banyaknya segitiga = ";cin>>n;
+for(i=1; i<=n; i++){
+		cout<<"segitiga yang ke- "<<i<<endl;
+		cout<<"panjang alas segitiga = ";cin>>a;
+		cout<<"tinggi segitiga = ";cin>>t;
+		hitungluas(a,t, &l);
+		cout<<"luas segitiga = "<<l<<endl;
+}
+cin.get();
+return 0;
+}
